@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "228795162478",
+    "project_id": "fada-unisach",
+    "storage_bucket": "fada-unisach.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228795162478:android:bddc3c41d17b561f8a6b7f",
+        "android_client_info": {
+          "package_name": "com.thefadaap.fadamarketingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "228795162478-6pp95t206rfl3tto25o1oa12o1b16ruh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUrH_Q6Mysq_FEWDjI6RPnJBIC_du976k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "228795162478-6pp95t206rfl3tto25o1oa12o1b16ruh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

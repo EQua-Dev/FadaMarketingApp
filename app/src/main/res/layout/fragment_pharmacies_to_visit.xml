@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.ui.pharmaciestovisit.PharmaciesToVisit">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_pharmacies_to_visit"
+        android:layout_margin="@dimen/padding_mini"
+        android:padding="@dimen/padding_mini"
+        tools:listitem="@layout/pharmacies_to_visit_item_layout"
+        tools:itemCount="5"/>
+
+</RelativeLayout>

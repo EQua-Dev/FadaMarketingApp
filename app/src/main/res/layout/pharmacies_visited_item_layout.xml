@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/padding_mini"
+    app:cardCornerRadius="@dimen/margin_midi"
+    app:strokeColor="@android:color/transparent"
+    app:cardElevation="@dimen/padding_mini">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_midi">
+
+        <TextView
+            android:id="@+id/pharmacy_visited_item_date_visited"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_mini"
+            android:textSize="@dimen/text_xxs"
+            tools:text="Thurs, 24 June, 2023" />
+
+        <TextView
+            android:id="@+id/pharmacy_visited_item_pharmacy_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pharmacy_visited_item_date_visited"
+            android:padding="@dimen/padding_mini"
+            android:textColor="@color/black"
+            tools:text="Easyway Pharmacy" />
+
+        <TextView
+            android:id="@+id/pharmacy_visited_item_pharmacy_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pharmacy_visited_item_pharmacy_name"
+            android:padding="@dimen/padding_mini"
+            android:textSize="@dimen/text_xxs"
+            tools:text="Hospital Pharmacy" />
+
+        <TextView
+            android:id="@+id/pharmacy_visited_item_pharmacy_visit_response"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/padding_mini"
+            android:textColor="@android:color/holo_red_dark"
+            tools:text="negative" />
+
+
+        <TextView
+            android:id="@+id/pharmacy_visited_item_pharmacy_route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pharmacy_visited_item_pharmacy_type"
+            android:padding="@dimen/padding_mini"
+            android:textSize="@dimen/text_xxs"
+            tools:text="Easyway Pharmacy" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

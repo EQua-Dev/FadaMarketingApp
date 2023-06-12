@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/padding_mini"
+    app:cardCornerRadius="@dimen/margin_midi"
+    app:strokeColor="@android:color/transparent"
+    app:cardElevation="@dimen/padding_mini">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_midi">
+
+        <TextView
+            android:id="@+id/pharmacy_to_visit_item_date_called"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_mini"
+            android:textSize="@dimen/text_xxs"
+            tools:text="Thurs, 24 June, 2023" />
+
+        <TextView
+            android:id="@+id/pharmacy_to_visit_item_pharmacy_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pharmacy_to_visit_item_date_called"
+            android:padding="@dimen/padding_mini"
+            android:textColor="@color/black"
+            tools:text="Easyway Pharmacy" />
+
+        <TextView
+            android:id="@+id/pharmacy_to_visit_item_pharmacy_call_response"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/padding_mini"
+            android:textColor="@color/black"
+            tools:text="positive" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pharmacy_to_visit_item_i_have_visited_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pharmacy_to_visit_item_pharmacy_name"
+            android:layout_alignParentEnd="true"
+            app:cornerRadius="@dimen/margin_midi"
+            android:layout_marginStart="@dimen/padding_mini"
+            android:layout_marginTop="@dimen/padding_mini"
+            android:layout_marginEnd="@dimen/padding_mini"
+            android:layout_marginBottom="@dimen/padding_mini"
+            android:backgroundTint="@color/secondary"
+            android:padding="@dimen/padding_mini"
+            android:text="@string/i_have_visited_title"
+            app:elevation="@dimen/padding_mini" />
+
+        <TextView
+            android:id="@+id/pharmacy_to_visit_item_pharmacy_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pharmacy_to_visit_item_pharmacy_name"
+            android:padding="@dimen/padding_mini"
+            android:textSize="@dimen/text_xxs"
+            tools:text="Hospital Pharmacy" />
+
+        <TextView
+            android:id="@+id/pharmacy_to_visit_item_pharmacy_route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pharmacy_to_visit_item_pharmacy_type"
+            android:padding="@dimen/padding_mini"
+            android:textSize="@dimen/text_xxs"
+            tools:text="Easyway Pharmacy" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splash">
+
+    <fragment
+        android:id="@+id/splash"
+        android:name="com.thefadaap.fadamarketingapp.Splash"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splash_to_signIn"
+            app:destination="@id/signIn" />
+    </fragment>
+    <fragment
+        android:id="@+id/signIn"
+        android:name="com.thefadaap.fadamarketingapp.auth.ui.SignIn"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signIn_to_resetPassword"
+            app:destination="@id/resetPassword" />
+        <action
+            android:id="@+id/action_signIn_to_homeLanding"
+            app:destination="@id/homeLanding" />
+    </fragment>
+    <fragment
+        android:id="@+id/resetPassword"
+        android:name="com.thefadaap.fadamarketingapp.auth.ui.ResetPassword"
+        android:label="fragment_reset_password"
+        tools:layout="@layout/fragment_reset_password" >
+        <action
+            android:id="@+id/action_resetPassword_to_signIn"
+            app:destination="@id/signIn" />
+    </fragment>
+    <fragment
+        android:id="@+id/allPharmacies"
+        android:name="com.thefadaap.fadamarketingapp.home.ui.pharmaciestovisit.PharmaciesToVisit"
+        android:label="fragment_all_pharmacies"
+        tools:layout="@layout/fragment_pharmacies_to_visit" >
+        <action
+            android:id="@+id/action_allPharmacies_to_pharmacyProfile"
+            app:destination="@id/pharmacyProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeLanding"
+        android:name="com.thefadaap.fadamarketingapp.home.ui.HomeLanding"
+        android:label="fragment_home_landing"
+        tools:layout="@layout/fragment_home_landing" >
+        <action
+            android:id="@+id/action_homeLanding_to_addPharmacy"
+            app:destination="@id/addPharmacy" />
+        <action
+            android:id="@+id/action_homeLanding_to_pharmacyProfile"
+            app:destination="@id/pharmacyProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/pendingTasks"
+        android:name="com.thefadaap.fadamarketingapp.home.ui.pharmaciestocall.PharmaciesToCall"
+        android:label="fragment_pending_tasks"
+        tools:layout="@layout/fragment_pharmacies_to_call" >
+        <action
+            android:id="@+id/action_pendingTasks_to_pharmacyProfile"
+            app:destination="@id/pharmacyProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPharmacy"
+        android:name="com.thefadaap.fadamarketingapp.home.ui.addpharmacy.AddPharmacy"
+        android:label="fragment_add_pharmacy"
+        tools:layout="@layout/fragment_add_pharmacy" >
+        <action
+            android:id="@+id/action_addPharmacy_to_homeLanding"
+            app:destination="@id/homeLanding" />
+    </fragment>
+    <fragment
+        android:id="@+id/pharmacyProfile"
+        android:name="com.thefadaap.fadamarketingapp.home.ui.pharmacyprofile.PharmacyProfile"
+        android:label="fragment_pharmacy_profile"
+        tools:layout="@layout/fragment_pharmacy_profile" >
+        <argument
+            android:name="pharmacyId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_pharmacyProfile_to_pharmaciesVisited"
+            app:destination="@id/pharmaciesVisited" />
+        <action
+            android:id="@+id/action_pharmacyProfile_to_allPharmacies"
+            app:destination="@id/allPharmacies" />
+        <action
+            android:id="@+id/action_pharmacyProfile_to_pendingTasks"
+            app:destination="@id/pendingTasks" />
+        <action
+            android:id="@+id/action_pharmacyProfile_to_homeLanding"
+            app:destination="@id/homeLanding" />
+    </fragment>
+    <fragment
+        android:id="@+id/pharmaciesVisited"
+        android:name="com.thefadaap.fadamarketingapp.home.ui.pharmaciesvisited.PharmaciesVisited"
+        android:label="fragment_pharmacies_visited"
+        tools:layout="@layout/fragment_pharmacies_visited" >
+        <action
+            android:id="@+id/action_pharmaciesVisited_to_pharmacyProfile"
+            app:destination="@id/pharmacyProfile" />
+    </fragment>
+</navigation>

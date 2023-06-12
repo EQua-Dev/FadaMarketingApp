@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.ui.pharmacyprofile.PharmacyProfile">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Easyway Pharmacy"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_xl"
+        android:layout_marginTop="@dimen/padding_midi"
+        android:padding="@dimen/padding_mini"
+        android:id="@+id/pharmacy_profile_name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Added 13 June, 2023"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_s"
+        android:layout_below="@id/pharmacy_profile_name"
+        android:id="@+id/pharmacy_profile_date_added"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pharmacy_profile_date_added"
+        android:layout_margin="@dimen/margin_mini"
+        app:cardElevation="@dimen/padding_mini"
+        app:cardCornerRadius="@dimen/margin_midi"
+        app:cardBackgroundColor="@color/white"
+        app:strokeWidth="0dp"
+        android:id="@+id/pharmacy_profile_card">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/pharmacy_profile_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/padding_mini"
+                android:layout_marginTop="@dimen/padding_mini"
+                android:layout_marginEnd="@dimen/padding_mini"
+                android:layout_marginBottom="@dimen/padding_mini"
+                android:padding="@dimen/padding_mini"
+                tools:text="change pharmacy type"
+                tools:textColor="@color/secondary"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:id="@+id/pharmacy_profile_layout_location"
+                android:layout_margin="@dimen/padding_mini"
+                android:layout_below="@id/pharmacy_profile_type"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.5"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_mini">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="302 Santana Avenue, Broadway"
+                        android:padding="@dimen/padding_mini"
+                        android:id="@+id/pharmacy_profile_location"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="GRA - Abakiliki Road"
+                        android:padding="@dimen/padding_mini"
+                        android:id="@+id/pharmacy_profile_route"/>
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/ic_map_directions"
+                    android:padding="@dimen/padding_mini"
+                    android:id="@+id/iv_pharmacy_profile_location"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:id="@+id/pharmacy_profile_layout_phone_number"
+                android:layout_margin="@dimen/padding_mini"
+                android:layout_below="@id/pharmacy_profile_layout_location"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    tools:text="@tools:sample/us_phones"
+                    android:padding="@dimen/padding_mini"
+                    android:id="@+id/pharmacy_profile_phone_number"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    app:srcCompat="@drawable/ic_phone_call"
+                    android:padding="@dimen/padding_mini"
+                    android:id="@+id/iv_pharmacy_profile_phone_number"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    app:srcCompat="@drawable/ic_edit"
+                    android:padding="@dimen/padding_mini"
+                    android:id="@+id/iv_pharmacy_profile_phone_number_edit"/>
+
+            </LinearLayout>
+               <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:id="@+id/pharmacy_profile_layout_email"
+                android:layout_margin="@dimen/padding_mini"
+                android:layout_below="@id/pharmacy_profile_layout_phone_number"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    tools:text="easyway@email.com"
+                    android:padding="@dimen/padding_mini"
+                    android:id="@+id/pharmacy_profile_email"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    app:srcCompat="@drawable/ic_email"
+                    android:padding="@dimen/padding_mini"
+                    android:id="@+id/iv_pharmacy_profile_email"/>
+
+                   <ImageView
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="0.5"
+                       app:srcCompat="@drawable/ic_edit"
+                       android:padding="@dimen/padding_mini"
+                       android:id="@+id/iv_pharmacy_profile_email_edit"/>
+
+               </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/pharmacy_profile_layout_call_details"
+                android:layout_below="@id/pharmacy_profile_layout_email"
+                android:padding="@dimen/padding_mini">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pharmacy_profile_call_details_title"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_mini"
+                    android:id="@+id/pharmacy_profile_call_status"
+                    tools:text="called"
+                    android:layout_marginStart="@dimen/margin_mini" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_mini"
+                    android:id="@+id/pharmacy_profile_date_called"
+                    tools:text="Thur, 23 June, 2023"
+                    android:layout_marginStart="@dimen/margin_mini" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_mini"
+                    android:id="@+id/pharmacy_profile_time_called"
+                    tools:text="@tools:sample/date/hhmm"
+                    android:layout_marginStart="@dimen/margin_mini" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_mini"
+                    android:id="@+id/pharmacy_profile_call_response"
+                    tools:text="positive"
+                    tools:textColor="@color/primary"
+                    android:layout_marginStart="@dimen/margin_mini" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_mini"
+                    android:id="@+id/pharmacy_profile_call_caller"
+                    tools:text="called by Tony"
+                    android:layout_marginStart="@dimen/margin_mini" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_mini"
+                    android:id="@+id/pharmacy_profile_call_comment"
+                    tools:text="@tools:sample/lorem/random"
+                    android:lines="2"
+                    android:layout_marginStart="@dimen/margin_mini" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/pharmacy_profile_layout_visit_details"
+                android:layout_below="@id/pharmacy_profile_layout_call_details"
+                android:padding="@dimen/padding_mini">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pharmacy_profile_visit_details_title"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_mini"
+                    android:id="@+id/pharmacy_profile_visit_status"
+                    tools:text="visited"
+                    android:layout_marginStart="@dimen/margin_mini" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_mini"
+                    android:id="@+id/pharmacy_profile_date_visited"
+                    tools:text="Thur, 23 June, 2023"
+                    android:layout_marginStart="@dimen/margin_mini" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_mini"
+                    android:id="@+id/pharmacy_profile_time_visited"
+                    tools:text="@tools:sample/date/hhmm"
+                    android:layout_marginStart="@dimen/margin_mini" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_mini"
+                    android:id="@+id/pharmacy_profile_visit_response"
+                    tools:text="positive"
+                    tools:textColor="@color/primary"
+                    android:layout_marginStart="@dimen/margin_mini" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_mini"
+                    android:id="@+id/pharmacy_profile_visit_comment"
+                    tools:text="@tools:sample/lorem/random"
+                    android:lines="2"
+                    android:layout_marginStart="@dimen/margin_mini" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="@dimen/button_width_xxl"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_pharmacy_profile_remove_pharmacy"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/pharmacy_profile_card"
+        android:padding="@dimen/padding_mini"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="@string/pharmacy_profile_remove_pharmacy"
+/>
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">Fada: Marketer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="sign_in_subtitle">Enter details to sign in</string>
+    <string name="account_btn_login">Sign In</string>
+    <string name="account_log_in_forgot_password_prompt">Reset Password</string>
+    <string name="sign_in_email">Enter Your Registered Email</string>
+    <string name="sign_in_password">Enter Your Password</string>
+    <string name="sign_in_title">Sign In</string>
+    <string name="forgot_password_title">Reset Password</string>
+    <string name="account_btn_reset_password">Reset Password</string>
+    <string name="forgot_password_subtitle">Enter Your Registered Email</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_reset_password">Reset Password</string>
+    <string name="app_slogan">Find Any Drug Anywhere</string>
+    <string name="add_pharmacy">Add Pharmacy</string>
+    <string name="register_new_pharmacy_title">Add New Pharmacy</string>
+    <string name="register_new_pharmacy_subtitle">Enter Details of New Pharmacy</string>
+    <string name="register_pharmacy_name">Enter Pharmacy Name (Required)</string>
+    <string name="register_pharmacy_location">Enter Pharmacy Location(Required)</string>
+    <string name="register_pharmacy_route">Select Pharmacy Route(Required)</string>
+    <string name="register_pharmacy_phone_number">Enter Pharmacy Phone Number(Required)</string>
+    <string name="register_pharmacy_email">Enter Pharmacy Email</string>
+    <string name="register_pharmacy_type">Select Pharmacy Type</string>
+    <string name="pharmacy_register_button">Add Pharmacy</string>
+    <string name="i_have_called_title">I Have Called</string>
+    <string name="i_have_called_subtitle">Fill Out Details of the Call</string>
+    <string name="i_have_called_date">Enter Date Called</string>
+    <string name="i_have_called_time">Enter Time Called</string>
+    <string name="i_have_called_response">Select Pharmacy Call Response Type</string>
+    <string name="i_have_called_comment">Enter Comment On Made Call</string>
+    <string name="i_have_called_submit_button">Submit Call Details</string>
+    <string name="i_have_visited_title">I Have Visited</string>
+    <string name="i_have_visited_subtitle">Fill Out Details Of The Visit</string>
+    <string name="i_have_visited_date">Enter Date Visited</string>
+    <string name="i_have_visited_time">Enter Time Visited</string>
+    <string name="i_have_visited_response">Select Pharmacy Visit Response Type</string>
+    <string name="i_have_visited_comment">Enter Comment On Made Visit</string>
+    <string name="i_have_visited_submit_button">Submit Visit Details</string>
+    <string name="pharmacy_profile_remove_pharmacy">Remove Pharmacy</string>
+    <string name="pharmacy_profile_call_details_title">Call Details</string>
+    <string name="pharmacy_profile_visit_details_title">Visit Details</string>
+    <string name="reset_password_instruction">Check your email</string>
+    <string name="reset_password_error">Failed to send password reset email</string>
+    <string name="pharmacies_to_call_tab_title">Pharmacies To Call</string>
+    <string name="call_status_updated">Call status updated</string>
+    <string name="visit_status_updated">Visit status updated</string>
+    <string name="day_month_year_format">EEEE, dd MMMM, yyyy</string>
+    <string name="unknown_store_type">Unknown Store Type</string>
+    <string name="unknown_store_email">Unknown store email</string>
+    <string name="has_called_text">called</string>
+    <string name="has_not_called_text">not called</string>
+    <string name="call_response_positive">positive</string>
+    <string name="call_response_neutral">neutral</string>
+    <string name="call_response_negative">negative</string>
+    <string name="has_visited_text">visited</string>
+    <string name="has_not_visited_text">not visited</string>
+    <string name="no_email_address_found">No email address found</string>
+    <string name="change_store_type">change store type</string>
+    <string name="i_have_called_date_empty_error">Date called required</string>
+    <string name="i_have_called_time_empty_error">Time called required</string>
+    <string name="i_have_called_response_empty_error">Call Response called required</string>
+    <string name="i_have_called_comment_empty_error">Comment on call required</string>
+    <string name="i_have_visited_date_empty_error">Date visited required</string>
+    <string name="i_have_visited_time_empty_error">Time visited required</string>
+    <string name="i_have_visited_response_empty_error">Visit Response called required</string>
+    <string name="i_have_visited_comment_empty_error">Comment on visit required</string>
+    <string name="delete_pharmacy_dialog_title">Delete Your Account!</string>
+    <string name="delete_pharmacy_dialog_message_content">Are You Sure?\\nThis action cannot be undone</string>
+    <string name="yes_text">YES</string>
+    <string name="no_text">NO</string>
+    <string name="pharmacy_deleted">Pharmacy Deleted</string>
+    <string name="enter_new_pharmacy_phone_number">Enter Pharmacy New Phone Number</string>
+    <string name="select_new_pharmacy_type">Select Pharmacy Type</string>
+    <string name="btn_confirm_edit">Confirm Edit</string>
+    <string name="btn_cancel_edit">Cancel Edit</string>
+    <string name="enter_new_pharmacy_email">Enter Pharmacy New Email</string>
+    <string name="pharmacy_type_updated">Pharmacy Type Updated</string>
+    <string name="pharmacy_email_updated">Pharmacy Email Updated</string>
+    <string name="pharmacy_info_updated">Pharmacy Info Updated</string>
+
+    <string name="email_pharmacy_subject">Introducing FADA: Transforming Pharmacy-Patient Connections</string>
+    <string name="email_pharmacy_text">
+        Dear %s,\n\nExciting news awaits you! We are thrilled to announce our upcoming visit to your pharmacy on [Date]. FADA, the revolutionary app connecting pharmacies and patients, is set to transform the way you deliver healthcare services.\n\nDuring our visit, we will showcase FADA\'s powerful features, including streamlined inventory tracking, customer visibility and direct patient prescription reservation. Our cutting-edge technology will optimize your workflow, boost efficiency, and enhance patient engagement.\n\nWe value face-to-face interaction and would love to discuss the benefits of integrating FADA into your operations. Please let us know your preferred time slot on [Date] for a meeting. Together, we can shape the future of healthcare delivery.\n\nLooking forward to meeting you soon!Best regards,\n%s \nMarketer \nDevstrike Digital Limited\n%s.
+    </string>
+
+    <string-array name="tab_titles">
+        <item>Pharmacies To Call</item>
+        <item>Pharmacies To Visit</item>
+        <item>Pharmacies Visited</item>
+    </string-array>
+
+    <string-array name="routes">
+        <item>Open Heaven (Polo Mall and Environs) to Abakiliki Road (Down to Abakpa Junction)</item>
+        <item>Abakiliki Road (Down to Abakpa Junction) to New Haven Junction (Naira Triangle)</item>
+        <item>New Haven Junction (Naira Triangle) to New Haven (Juhel Filling Station)</item>
+        <item>New Haven (Juhel Filling Station) to Independence Layout (Presidential Road)</item>
+        <item>Independence Layout (Presidential Road) to Maryland</item>
+        <item>Maryland to Agbani Road</item>
+        <item>Agbani Road to Holy Ghost</item>
+        <item>Holy Ghost to GRA</item>
+    </string-array>
+
+    <string-array name="store_types">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+        <item>Hospital</item>
+    </string-array>
+
+    <string-array name="call_response_type">
+        <item>negative</item>
+        <item>neutral</item>
+        <item>positive</item>
+    </string-array>
+
+</resources>

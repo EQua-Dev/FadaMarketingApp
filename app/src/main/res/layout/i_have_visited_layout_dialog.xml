@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/tv_i_have_visited_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_mini"
+        android:layout_marginTop="@dimen/padding_mini"
+        android:layout_marginEnd="@dimen/padding_mini"
+        android:text="@string/i_have_visited_title"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_xxl" />
+
+    <TextView
+        android:id="@+id/tv_i_have_visited_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_i_have_visited_title"
+        android:text="@string/i_have_visited_subtitle"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_s" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_i_have_visited"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_i_have_visited_subtitle"
+        android:layout_margin="@dimen/padding_mini"
+        android:padding="@dimen/padding_mini"
+        app:cardElevation="@dimen/padding_mini">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_layout_i_have_visited_date"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/padding_mini"
+                android:layout_marginEnd="@dimen/padding_mini"
+                android:hint="@string/i_have_visited_date"
+                android:padding="@dimen/padding_mini"
+                android:textColorHint="@color/secondary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/i_have_visited_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/i_have_visited_date"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:labelFor="@id/i_have_visited_date" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_layout_i_have_visited_time"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/padding_mini"
+                android:layout_marginEnd="@dimen/padding_mini"
+                android:hint="@string/i_have_visited_time"
+                android:padding="@dimen/padding_mini"
+                android:textColorHint="@color/secondary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/i_have_visited_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/i_have_visited_time"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:labelFor="@id/i_have_visited_time" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_layout_i_have_visited_response"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_mini"
+                android:padding="@dimen/padding_mini"
+                android:textColorHint="@color/secondary">
+
+                <AutoCompleteTextView
+                    android:id="@+id/auto_complete_i_have_visited_response"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_mini"
+                    android:drawablePadding="@dimen/padding_midi"
+                    android:hint="@string/i_have_visited_response"
+                    android:padding="@dimen/padding_maxi" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_layout_i_have_visited_comment"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/padding_mini"
+                android:layout_marginEnd="@dimen/padding_mini"
+                android:hint="@string/i_have_visited_comment"
+                android:padding="@dimen/padding_mini"
+                android:textColorHint="@color/secondary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/i_have_visited_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/i_have_visited_comment"
+                    android:importantForAutofill="no"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:labelFor="@id/i_have_visited_comment" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/i_have_visited_submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_i_have_visited"
+        android:layout_margin="@dimen/padding_mini"
+        android:backgroundTint="@color/secondary"
+        android:padding="@dimen/padding_mini"
+        android:text="@string/i_have_visited_submit_button" />
+
+
+</RelativeLayout>
