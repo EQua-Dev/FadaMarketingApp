@@ -108,7 +108,7 @@ class PharmacyProfile : Fragment() {
 
         val builder = layoutInflater.inflate(R.layout.edit_pharmacy_type_dialog, null)
 
-        builder.findViewById<TextInputLayout>(R.id.text_input_layout_edit_pharmacy_type)
+        //builder.findViewById<TextInputLayout>(R.id.text_input_layout_edit_pharmacy_type)
         val autoCompleteViewType =
             builder.findViewById<AutoCompleteTextView>(R.id.auto_complete_text_edit_pharmacy_type)
 
